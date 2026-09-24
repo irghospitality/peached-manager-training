@@ -413,7 +413,7 @@
       '</ul><p style="font-size:13px;color:var(--muted);margin:8px 0 0">Your manager confirms these during your live review in manager mode.</p></div>' +
       '<div class="footnote">Module ' + esc(m.id) + " \u00b7 " + esc(m.title) + "</div></div>";
 
-    byId("back").onclick = function () { state.view = "track"; render(); };
+    byId("back").onclick = function () { state.view = "home"; render(); };
 
     // Force external course/resource links into a NEW tab so the module stays open.
     Array.prototype.forEach.call(document.querySelectorAll("a.course-link"), function (a) {
